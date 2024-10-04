@@ -1,0 +1,19 @@
+<main>
+  <div>
+    <label for="name">Tool Name: </label>
+    <input type="text" id="name" [(ngModel)]="name" />
+    <br />
+    <button (click)="add()">Add to developer tools list</button>
+  </div>
+  <div>
+
+    @if( developerToolList.length === 0){
+    }@else{
+    <ol>
+      @for( tool of developerToolList; track $index){
+      <li [style.marginBottom]="'20px'">Tool Name: {{ tool.name }}</li>
+      }
+    </ol>
+    }
+  </div>
+</main>

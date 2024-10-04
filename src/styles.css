@@ -1,0 +1,33 @@
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Increased gap for more spacious layout */
+}
+
+.tab {
+  background-color: #0077b6; /* Updated to a cool blue for a fresher look */
+  color: #ffffff; /* White text for better contrast on the new background */
+  padding: 0.9rem 1.2rem; /* Adjusted padding for better balance */
+  border-radius: 1rem; /* Larger radius for more rounded corners */
+  text-decoration: none;
+  font-weight: 600; /* Reduced boldness for a smoother look */
+  font-family: 'Poppins', sans-serif; /* Changed font to 'Poppins' for a modern and clean feel */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Added a smooth transform on hover */
+}
+
+.tab:hover {
+  background-color: #023e8a; /* Darker blue on hover for an interactive effect */
+  transform: translateY(-3px); /* Lift effect on hover */
+  color: #ffffff; /* Keep text white on hover */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; /* Increased gap for a more open layout */
+  padding: 1.5rem; /* Increased padding for a more defined container */
+  background-color: #e0f7fa; /* Light cyan background for a fresh, airy feel */
+  border-radius: 1rem; /* Increased border-radius for a softer container look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for added depth */
+}
+
